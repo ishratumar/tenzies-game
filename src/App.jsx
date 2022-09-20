@@ -1,8 +1,7 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <Main />
-  </React.StrictMode>
-)
+export default function App(){
+  return(
+    <main>hellooooo</main>
+  )
+}
