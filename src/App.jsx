@@ -1,7 +1,9 @@
 import React from 'react'
 import Die from "./Components/Die"
 
-export default function App(){
+
+export default function App() {
+
     const [dice, setDice] = React.useState(allNewDice())
     
     function allNewDice() {
@@ -13,9 +15,13 @@ export default function App(){
     }
     
     const diceElements = dice.map(die => <Die value={die} />)
-  return(
-    <main>
-      {diceElements}
-    </main>
-  )
-  }
+    
+    return (
+        <main>
+            <div className="dice-container">
+                {diceElements}
+            </div>
+            {/*New button here*/}
+        </main>
+    )
+}
